@@ -68,6 +68,7 @@ public class Main extends Canvas implements Runnable {
 		setCursor(cursor);
 		global.setGameOver(false);
 		// Scores
+		// Null score
 	}
 
 	public void start() {
