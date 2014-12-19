@@ -52,12 +52,12 @@ public class HighscoreTable {
 		// g.fillRect(11 * SCALE, 54 * SCALE, 38 * SCALE, 5 * SCALE);
 		// g.fillRect(11 * SCALE, 63 * SCALE, 38 * SCALE, 5 * SCALE);
 		g.setColor(c);
-		g.fillRect(23 * SCALE, 20 * SCALE, SCALE, SCALE);
-		g.fillRect(23 * SCALE, 29 * SCALE, SCALE, SCALE);
-		g.fillRect(23 * SCALE, 38 * SCALE, SCALE, SCALE);
-		g.fillRect(23 * SCALE, 47 * SCALE, SCALE, SCALE);
-		g.fillRect(23 * SCALE, 56 * SCALE, SCALE, SCALE);
-		g.fillRect(23 * SCALE, 65 * SCALE, SCALE, SCALE);
+		g.fillRect(14 * SCALE, 20 * SCALE, SCALE, SCALE);
+		g.fillRect(14 * SCALE, 29 * SCALE, SCALE, SCALE);
+		g.fillRect(14 * SCALE, 38 * SCALE, SCALE, SCALE);
+		g.fillRect(14 * SCALE, 47 * SCALE, SCALE, SCALE);
+		g.fillRect(14 * SCALE, 56 * SCALE, SCALE, SCALE);
+		g.fillRect(14 * SCALE, 65 * SCALE, SCALE, SCALE);
 		switch (mo.getHighlight()) {
 		case 1:
 			g.setColor(Color.white);
@@ -85,9 +85,9 @@ public class HighscoreTable {
 			for (int j = 0; j < currScoreUp.length(); j++) {
 				int pos = font_map.indexOf(currScoreUp.charAt(j));
 				g.drawImage(spriteSheet.getSprite(20 + (pos * 4), 0, 4, 5),
-						156 + ((30 * j)), 108 + (54 * i), 24, 30, null);
+						110 + ((30 * j)), 108 + (54 * i), 24, 30, null);
 				g.drawImage(spriteSheet.getSprite(20 + (pos * 4), 0, 4, 5),
-						156 + ((30 * j)), 108 + (54 * i), 24, 30, null);
+						110 + ((30 * j)), 108 + (54 * i), 24, 30, null);
 			}
 		}
 	}
