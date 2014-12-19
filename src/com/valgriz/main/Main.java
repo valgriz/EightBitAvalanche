@@ -67,7 +67,7 @@ public class Main extends Canvas implements Runnable {
 				new Point(0, 0), "Foot");
 		setCursor(cursor);
 		global.setGameOver(false);
-		// Scores
+		// Scores -untrack with git
 	}
 
 	public void start() {
