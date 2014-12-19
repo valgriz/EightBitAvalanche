@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class HighscoreManager {
+	
+	//Test
 
 	private ArrayList<Score> scores;
 	private static final String HIGHSCORE_FILE = "save.8ba";
