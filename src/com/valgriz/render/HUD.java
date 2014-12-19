@@ -108,11 +108,11 @@ public class HUD {
 			g.drawImage(spriteSheet.getSprite(0, 22, 9, 7), 186, 348, 54, 42,
 					null);
 
-			if (global.isHighscore()) {
-				g.setColor(Color.black);
-				g.fillRect(17 * 6, 14 * 6, 24 * 6, 11 * 6);
-
-			}
+//			if (global.isHighscore()) {
+//				g.setColor(Color.black);
+//				g.fillRect(17 * 6, 14 * 6, 24 * 6, 11 * 6);
+//
+//			}
 		}
 		if (global.isPaused() && !global.isGameOver()) {
 			switch (mo.getHighlight()) {
