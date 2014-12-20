@@ -34,6 +34,7 @@ public class Mouse implements MouseMotionListener, MouseListener {
 	public void mousePressed(MouseEvent e) {
 		selection = 4;
 		highlight = 3;
+
 		if (global.isInMenu()) {
 			if (e.getX() >= 9 * 6 && e.getX() <= 305) {
 				if (e.getY() >= 200 && e.getY() <= 70 * 6) {
@@ -48,8 +49,8 @@ public class Mouse implements MouseMotionListener, MouseListener {
 							global.setInHighScores(true);
 						}
 						if (e.getY() >= 311 && e.getY() <= 365) {
-
-							System.out.println("2");
+							global.setInHowToPlay(true);
+							global.setInMenu(false);
 						}
 						if (e.getY() >= 366 && e.getY() <= 420) {
 							System.exit(0);
@@ -60,6 +61,9 @@ public class Mouse implements MouseMotionListener, MouseListener {
 				}
 			} else {
 			}
+		} else if (global.isInHowToPlay()) {
+			global.setInHowToPlay(false);
+			global.setInMenu(true);
 		}
 
 		if (global.isPaused()) {

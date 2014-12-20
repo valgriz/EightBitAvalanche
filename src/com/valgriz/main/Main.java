@@ -68,7 +68,7 @@ public class Main extends Canvas implements Runnable {
 		setCursor(cursor);
 		global.setGameOver(false);
 		// Scores
-		
+
 	}
 
 	public void start() {
@@ -108,7 +108,7 @@ public class Main extends Canvas implements Runnable {
 			// Background
 			background.paint(g, SCALE);
 			// Override Menu
-			if (global.inMenu && !global.inGame) {
+			if ((global.inMenu || global.isInHowToPlay()) && !global.inGame) {
 				menu.paint(g);
 			} else if (global.inGame) {
 				// Focus

@@ -11,6 +11,7 @@ public class Global {
 	public static boolean resetSwitch;
 	public static boolean pixelBurst;
 	public static boolean highscore;
+	public static boolean inHowToPlay;
 	public static int score;
 
 	public Global() {
@@ -103,4 +104,13 @@ public class Global {
 	public static void setHighscore(boolean highscore) {
 		Global.highscore = highscore;
 	}
+
+	public static boolean isInHowToPlay() {
+		return inHowToPlay;
+	}
+
+	public static void setInHowToPlay(boolean inHowToPlay) {
+		Global.inHowToPlay = inHowToPlay;
+	}
+
 }
